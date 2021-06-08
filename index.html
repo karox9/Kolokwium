@@ -10,6 +10,13 @@
         <div class="cell">
             <div class="cyfra"> 1 </div>
         </div>
+        <div class="mapa" v-for="x in rows">
+            <div v-for="y in columns">
+                <div class="cell">
+                    {{ x }},{{ y }}
+                </div>
+            </div>
+        </div>
     {{ message }}
     </div>
 
@@ -17,7 +24,9 @@
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Powodzenia'
+            message: 'Powodzenia',
+            rows: 10,
+            columns: 10
         }
     })
     </script>

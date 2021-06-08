@@ -12,3 +12,9 @@
     align-items: center; 
     justify-content: center; 
 }
+
+.mapa 
+{
+    display: flex;
+    flex-direction: row;
+}
