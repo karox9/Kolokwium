@@ -12,7 +12,7 @@
         </div>
         <div class="mapa" v-for="x in rows">
             <div v-for="y in columns">
-                <div class="cell">
+                <div class="cell" :class="{active: (active[0] == x && active[0] == y)}">
                     {{ x }},{{ y }}
                 </div>
             </div>
@@ -26,7 +26,8 @@
         data: {
             message: 'Powodzenia',
             rows: 10,
-            columns: 10
+            columns: 10,
+            active: "1,1",
         }
     })
     </script>
